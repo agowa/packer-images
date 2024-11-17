@@ -1,0 +1,25 @@
+{
+  "recommendations": [
+    "4ops.packer",
+    "codezombiech.gitignore",
+    "wayou.vscode-todo-highlight",
+    "l13rary.l13-diff",
+    "hashicorp.hcl",
+    "oderwat.indent-rainbow",
+    "ryu1kn.partial-diff",
+    "esbenp.prettier-vscode",
+    "svipas.prettier-plus",
+    "mohsen1.prettify-json",
+    "mechatroner.rainbow-csv",
+    "redhat.vscode-xml",
+    "redhat.vscode-yaml",
+    "eamodio.gitlens",
+    "donjayamanne.githistory",
+    "mhutchie.git-graph",
+    "vscode-icons-team.vscode-icons",
+    "vscodevim.vim",
+    "alefragnani.bookmarks",
+    "ms-vscode.powershell",
+    "ms-vscode.hexeditor"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "ansible.python.interpreterPath": "${workspaceFolder}/venv/bin/python",
+  "diffEditor.experimental.useTrueInlineView": false,
+  "dotnetAcquisitionExtension.enableTelemetry": false,
+  "editor.tabSize": 2,
+  "git.detectSubmodulesLimit": 999999,
+  "git.enableSmartCommit": false,
+  "git.ignoreLimitWarning": true,
+  "git.statusLimit": 0,
+  "git.timeline.showUncommitted": true,
+  "gitlens.telemetry.enabled": false,
+  "notebook.experimental.remoteSave": true,
+  "partialDiff.enableTelemetry": false,
+  "python.terminal.activateEnvInCurrentTerminal": false,
+  "window.zoomLevel": -1,
+  "workbench.iconTheme": "vscode-icons",
+  "yaml.format.singleQuote": true,
+}
