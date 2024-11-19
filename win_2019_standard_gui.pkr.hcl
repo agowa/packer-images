@@ -23,9 +23,14 @@ variable "vcsa_datastore" {
   default = "${env("packer_vcsa_datastore")}"
 }
 
+variable "vcsa_datacenter" {
+  type    = string
+  default = "${env("packer_vcsa_datacenter")}"
+}
+
 variable "vcsa_guest_ip" {
   type    = string
-  default = "192.168.178.44"
+  default = "10.235.60.235"
 }
 
 variable "vcsa_insecure" {
@@ -80,7 +85,8 @@ source "vsphere-iso" "vsphere-iso" {
   }
   convert_to_template   = true
   datastore             = "${var.vcsa_datastore}"
-  disk__controller_type = ["pvscsi"]
+  datacenter            = "${var.vcsa_datacenter}"
+  disk_controller_type  = ["pvscsi"]
   firmware              = "efi-secure"
   floppy_dirs           = ["./drivers"]
   floppy_files          = [

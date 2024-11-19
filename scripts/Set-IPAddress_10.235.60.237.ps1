@@ -1,8 +1,8 @@
 New-NetIPAddress `
     -AddressFamily IPv4 `
-    -DefaultGateway 192.168.178.1 `
+    -DefaultGateway 10.235.60.237 `
     -InterfaceAlias Ethernet0 `
-    -IPAddress 192.168.178.44 `
+    -IPAddress 10.235.60.1 `
     -PrefixLength 24
     -Type Unicast `
 
