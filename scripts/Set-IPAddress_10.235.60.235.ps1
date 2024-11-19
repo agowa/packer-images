@@ -3,8 +3,8 @@ New-NetIPAddress `
     -DefaultGateway 10.235.60.235 `
     -InterfaceAlias Ethernet0 `
     -IPAddress 10.235.60.1 `
-    -PrefixLength 24
-    -Type Unicast `
+    -PrefixLength 24 `
+    -Type Unicast
 
 Set-DnsClientServerAddress `
     -InterfaceAlias Ethernet0 `
