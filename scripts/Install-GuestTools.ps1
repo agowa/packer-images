@@ -7,8 +7,8 @@ $WarningPreference="Continue"
 function Install-VMwareGuestTools() {
   [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
-  $latestVersionPage = Invoke-WebRequest -Uri 'https://packages.vmware.com/tools/releases/latest/windows/x64/index.html' -UseBasicParsing
-  $newVersionURL = 'https://packages.vmware.com/tools/releases/latest/windows/x64/{0}' -f $latestVersionPage.Links.where{$_.outerHTML -like '*VMware-tools*x86_64.exe*'}.HREF
+  $latestVersionPage = Invoke-WebRequest -Uri 'https://packages.vmware.com/tools/releases/latest/windows/x64/' -UseBasicParsing
+  $newVersionURL = 'https://packages.vmware.com/tools/releases/latest/windows/x64/{0}' -f $latestVersionPage.Links.where{$_.outerHTML -like '*VMware-tools*x64.exe*'}.HREF
   $TempFile = Join-Path -Path $env:TEMP -ChildPath 'VMwareTools.exe'
 
   Invoke-WebRequest -Uri $newVersionURL -OutFile $TempFile -UseBasicParsing
@@ -32,7 +32,7 @@ function Install-VMwareGuestTools() {
   Start-Sleep -Seconds 2
   $Arguments = @(
     '/i'
-    '"{0}\{1}"' -f $extractDir, 'VMware Tools64.msi'
+    '"{0}\{1}"' -f $extractDir, 'VMware Tools.msi'
     '/qn'
     '/quiet'
     '/norestart'
