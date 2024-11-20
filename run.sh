@@ -9,10 +9,10 @@ export packer_vcsa_network="VLAN60"
 #export packer_vcsa_password=""
 export packer_vcsa_server="htzvcsa01.hetzner.lab"
 
-#packer init win_2019_standard_gui.pkr.hcl
+packer init win_2019_standard_gui.pkr.hcl
 packer init win_2022_standard_gui.pkr.hcl
 packer init win_2025_standard_gui.pkr.hcl
 
-#packer build win_2019_standard_gui.pkr.hcl
+packer build win_2019_standard_gui.pkr.hcl
 packer build win_2022_standard_gui.pkr.hcl
 packer build win_2025_standard_gui.pkr.hcl

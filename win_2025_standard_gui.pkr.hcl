@@ -40,7 +40,7 @@ variable "vcsa_insecure" {
 
 variable "vcsa_iso_path" {
   type    = string
-  #default = "[${env("vcsa_iso_datastore")}] /ISOs/26100.1742.240906-0331.ge_release_svc_refresh_SERVER_EVAL_x64FRE_en-us.iso"
+  default = "[${env("vcsa_iso_datastore")}] /ISOs/26100.1742.240906-0331.ge_release_svc_refresh_SERVER_EVAL_x64FRE_en-us.iso"
 }
 
 variable "vcsa_network" {
