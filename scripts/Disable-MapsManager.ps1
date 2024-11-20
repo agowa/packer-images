@@ -4,4 +4,8 @@ $ErrorActionPreference="Stop"
 $ProgressPreference="SilentlyContinue"
 $WarningPreference="Continue"
 
-Set-Service -Name MapsBroker -StartupType Disabled
+try {
+  Set-Service -Name MapsBroker -StartupType Disabled
+} catch {
+  Write-Host "MapsBroker service not found, disabling was skipped."
+}
